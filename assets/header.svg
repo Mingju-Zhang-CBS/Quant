@@ -1,11 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="272" viewBox="0 0 1200 272" role="img" aria-labelledby="title desc">
-<title id="title">Mingju Zhang: Quantitative Finance</title><desc id="desc">Financial research, statistical learning and numerical methods. MSFE candidate at Columbia Business School.</desc>
-<rect width="1200" height="272" rx="18" fill="#101f32"/>
-<rect x="42" y="31" width="40" height="4" rx="2" fill="#55c6b0"/>
-<text x="98" y="40" fill="#aac3d5" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="2">QUANTITATIVE FINANCE  /  RESEARCH PORTFOLIO</text>
-<text x="42" y="109" fill="#f5f8fb" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Mingju Zhang</text>
-<text x="44" y="151" fill="#d0dce6" font-family="Arial, Helvetica, sans-serif" font-size="21">Financial research. Statistical learning. Numerical methods.</text>
-<text x="44" y="187" fill="#8fa9be" font-family="Arial, Helvetica, sans-serif" font-size="17">MSFE candidate | Columbia Business School</text>
-<line x1="44" y1="210" x2="1156" y2="210" stroke="#31445a"/>
-<text x="44" y="245" fill="#76d5c2" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing=".7">DEFINE THE QUESTION     /     BUILD THE MODEL     /     VERIFY THE EVIDENCE</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="t d">
+<title id="t">Mingju Zhang</title><desc id="d">Quantitative Research / Financial Machine Learning</desc>
+<rect width="1200" height="220" rx="18" fill="#101928"/>
+<path d="M850 164 L920 100 L979 132 L1044 62 L1152 91" fill="none" stroke="#36B3A8" stroke-width="5" opacity=".7"/>
+<circle cx="1044" cy="62" r="8" fill="#36B3A8"/><path d="M44 40 H103" stroke="#36B3A8" stroke-width="5"/>
+<text x="44" y="116" font-family="Arial,sans-serif" font-size="58" font-weight="700" fill="#F5F7FA">Mingju Zhang</text>
+<text x="46" y="172" font-family="Arial,sans-serif" font-size="24" fill="#b9d0d7">Quantitative Research / Financial Machine Learning</text></svg>

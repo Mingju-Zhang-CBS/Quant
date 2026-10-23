@@ -1,0 +1,113 @@
+{
+  "as_of": "2026-10-23",
+  "items": [
+    {
+      "id": "financial-data-engineering",
+      "title": "Point-in-Time Financial Data",
+      "kind": "method-note",
+      "status": "published-note",
+      "path": "cases/financial-data-engineering.md",
+      "data": "new illustrative examples; original sources excluded"
+    },
+    {
+      "id": "equity-signal-research",
+      "title": "Equity Signals and Model Validation",
+      "kind": "method-note",
+      "status": "published-note",
+      "path": "cases/equity-signal-research.md",
+      "data": "new illustrative examples; original sources excluded"
+    },
+    {
+      "id": "financial-text",
+      "title": "Financial Text and Event-Time Research",
+      "kind": "method-note",
+      "status": "published-note",
+      "path": "cases/financial-text.md",
+      "data": "new illustrative examples; original sources excluded"
+    },
+    {
+      "id": "housing-credit",
+      "title": "Housing, Credit and Real-Estate Decisions",
+      "kind": "method-note",
+      "status": "published-note",
+      "path": "cases/housing-credit.md",
+      "data": "new illustrative examples; original sources excluded"
+    },
+    {
+      "id": "research-systems",
+      "title": "AI-Assisted Research Systems",
+      "kind": "method-note",
+      "status": "published-note",
+      "path": "cases/research-systems.md",
+      "data": "new illustrative examples; original sources excluded"
+    },
+    {
+      "id": "trading-market-making",
+      "title": "Trading and Inventory Risk",
+      "kind": "method-note",
+      "status": "published-note",
+      "path": "cases/trading-market-making.md",
+      "data": "new illustrative examples; original sources excluded"
+    },
+    {
+      "id": "products-portfolio",
+      "title": "Financial Products and Portfolio Decisions",
+      "kind": "method-note",
+      "status": "published-note",
+      "path": "cases/products-portfolio.md",
+      "data": "new illustrative examples; original sources excluded"
+    },
+    {
+      "id": "agentic-quant-research",
+      "title": "Agentic Quant Research",
+      "kind": "runnable-study",
+      "status": "implemented-local-validation",
+      "repository": "https://github.com/Mingju-Zhang-CBS/agentic-quant-research",
+      "data": "synthetic"
+    },
+    {
+      "id": "financial-ml-validation",
+      "title": "Financial ML Validation",
+      "kind": "runnable-study",
+      "status": "implemented-local-validation",
+      "repository": "https://github.com/Mingju-Zhang-CBS/financial-ml-validation",
+      "data": "synthetic"
+    },
+    {
+      "id": "market-making-lab",
+      "title": "Market Making Lab",
+      "kind": "runnable-study",
+      "status": "implemented-local-validation",
+      "repository": "https://github.com/Mingju-Zhang-CBS/market-making-lab",
+      "data": "simulated"
+    },
+    {
+      "id": "systematic-strategy-lab",
+      "title": "Systematic Strategy Lab",
+      "kind": "runnable-study",
+      "status": "implemented-local-validation",
+      "repository": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab",
+      "data": "synthetic"
+    },
+    {
+      "id": "derivatives-pricing-lab",
+      "title": "Derivatives Pricing Lab",
+      "kind": "runnable-study",
+      "status": "implemented-local-validation",
+      "repository": "https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab",
+      "data": "simulated"
+    },
+    {
+      "id": "financial-text-validation",
+      "kind": "research-brief",
+      "status": "planned",
+      "path": "roadmap/financial-text-validation.md"
+    },
+    {
+      "id": "defined-outcome-research",
+      "kind": "research-brief",
+      "status": "planned",
+      "path": "roadmap/defined-outcome-research.md"
+    }
+  ]
+}
