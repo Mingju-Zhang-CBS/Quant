@@ -113,5 +113,17 @@
       "repository": "https://github.com/Mingju-Zhang-CBS/defined-outcome-research",
       "data": "public issuer terms with simulated valuation scenarios; zero quotes bundled"
     }
-  ]
+  ],
+  "featured_order": [
+    "financial-text-validation",
+    "financial-ml-validation",
+    "market-making-lab",
+    "agentic-quant-research",
+    "systematic-strategy-lab",
+    "defined-outcome-research"
+  ],
+  "supporting_studies": [
+    "derivatives-pricing-lab"
+  ],
+  "navigation_repository": "https://github.com/Mingju-Zhang-CBS/Quant"
 }
