@@ -71,7 +71,16 @@
       "kind": "runnable-study",
       "status": "published-validated",
       "repository": "https://github.com/Mingju-Zhang-CBS/financial-ml-validation",
-      "data": "synthetic"
+      "data": "public-real Treasury reference yields; separate legacy synthetic/anonymous-challenge adapter",
+      "result": "reports/real/REPORT.md",
+      "capabilities": [
+        "rates research",
+        "financial machine learning",
+        "label-availability purging",
+        "probability calibration",
+        "dependent inference"
+      ],
+      "limitation": "Current historical vintage; no prospective unseen OOS or trading-return claim. Baseline leads development; selected classifier underperforms confirmation."
     },
     {
       "id": "market-making-lab",

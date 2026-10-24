@@ -48,10 +48,10 @@ I build testable research systems that connect financial evidence, models and de
 
 #### 05 · [Financial ML Validation](https://github.com/Mingju-Zhang-CBS/financial-ml-validation)
 
-**How much trust does a financial classifier earn?** I compare logistic regression, LightGBM and CatBoost with keyed label alignment, train-fitted transformations, fixed ablations and date-level uncertainty. The synthetic accuracy interval includes zero.
+**Can a classifier improve a simple rates forecast?** I compare nine fixed model/feature configurations on 9,005 official Treasury-yield observations. Delayed forecast origins, label-availability purging and frozen selection prevent temporal shortcuts. The baseline leads development; negative and block-sensitive findings stay in the report.
 
-*Synthetic panel · financial ML · validation and uncertainty*  
-[Case study](projects/financial-ml-validation.md) · [Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/demo/REPORT.md)
+*Real public Treasury yields · financial ML · probability quality*  
+[Case study](projects/financial-ml-validation.md) · [Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md)
 
 #### 06 · [Agentic Quant Research](https://github.com/Mingju-Zhang-CBS/agentic-quant-research)
 
@@ -93,7 +93,7 @@ Read [Market Making](https://github.com/Mingju-Zhang-CBS/market-making-lab), [De
 
 ### Quantitative Research
 
-Start with [Financial Text](https://github.com/Mingju-Zhang-CBS/financial-text-validation) and [Systematic Strategies](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) for actual public-data investigations, baselines, temporal checks and uncertainty. Add [Financial ML](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) for controlled model comparisons and [Agentic Research](https://github.com/Mingju-Zhang-CBS/agentic-quant-research) for experiment governance. Negative and insignificant outcomes are part of the evidence.
+Start with [Financial Text](https://github.com/Mingju-Zhang-CBS/financial-text-validation) and [Systematic Strategies](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) for actual public-data investigations, baselines, temporal checks and uncertainty. Add [Financial ML](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) for real public rates data, purged model comparisons and [Agentic Research](https://github.com/Mingju-Zhang-CBS/agentic-quant-research) for experiment governance. Negative and insignificant outcomes are part of the evidence.
 
 ### Data Science
 
@@ -112,6 +112,6 @@ Both original briefs now have runnable first studies and separately labeled exte
 
 ## Evidence standard
 
-Financial Text Validation uses real public Board text and archived FX references. Systematic Strategy Lab uses official public fund-NAV facts with modeled allocations. Defined-Outcome Research combines issuer facts with modeled scenarios; four other studies use synthetic inputs or simulated paths. Read the complete report and assumptions before interpreting a metric. A valid factor is not an alpha, a synthetic policy ranking is not real profitability, and a local numerical benchmark is not exchange latency. Each project records its own source/data fingerprints and execution environment.
+Financial Text Validation uses real public Board text and archived FX references. Systematic Strategy Lab uses official public fund-NAV facts with modeled allocations. Financial ML Validation uses real public Treasury yields with explicit future-origin labels. Defined-Outcome Research combines issuer facts with modeled scenarios; three other studies use synthetic inputs or simulated paths. Read the complete report and assumptions before interpreting a metric. A valid factor is not an alpha, a synthetic policy ranking is not real profitability, and a local numerical benchmark is not exchange latency. Each project records its own source/data fingerprints and execution environment.
 
 Development was AI-assisted. Personal implementation, public methods, library authorship and prior collaboration are distinguished in provenance notes. [Machine-readable content catalog](project-catalog.json).
