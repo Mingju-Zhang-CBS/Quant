@@ -107,9 +107,11 @@
     },
     {
       "id": "defined-outcome-research",
-      "kind": "research-brief",
-      "status": "planned",
-      "path": "roadmap/defined-outcome-research.md"
+      "title": "Defined-Outcome Research",
+      "kind": "runnable-study",
+      "status": "published-validated",
+      "repository": "https://github.com/Mingju-Zhang-CBS/defined-outcome-research",
+      "data": "public issuer terms with simulated valuation scenarios; zero quotes bundled"
     }
   ]
 }

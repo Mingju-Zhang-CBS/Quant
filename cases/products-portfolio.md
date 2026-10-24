@@ -4,13 +4,13 @@
 
 **Question:** Which assumptions change the investment decision?
 
-The background includes option payoff analysis, portfolio concentration, risk attribution and liquidity allocation. The original internship materials, client scenarios and workbooks remain private. This page provides original teaching explanations and routes to public implementations and a future design brief.
+The background includes option payoff analysis, portfolio concentration, risk attribution and liquidity allocation. The original internship materials, client scenarios and workbooks remain private. This page provides original teaching explanations and routes to public implementations.
 
 ## Payoff is not current value
 
 A piecewise terminal payoff can be understood as a combination of calls, puts and cash or underlying exposure. Its value before expiry also depends on remaining time, volatility, rates and option prices. Fees and entry price change the investor's return even when the terminal contract payoff is unchanged. A stated buffer over an outcome period is not automatically an investor's protection at an arbitrary purchase date.
 
-The [defined-outcome brief](../roadmap/defined-outcome-research.md) proposes an independently rebuilt scenario study based on fresh public issuer documents. It separates contractual payoff, model-implied mid-period value and actual executable quotes. It does not reuse historical internship reconciliation errors as new evidence.
+The implemented [Defined-Outcome Research](../projects/defined-outcome-research.md) uses fresh public issuer terms and independently written scenarios. It separates terminal target, model marks and a typed market-observation channel. No quotes are bundled and no ETF NAV reconciliation is claimed; private internship figures are not reused.
 
 ## Portfolio risk and liquidity
 
@@ -24,6 +24,6 @@ This area demonstrates mathematical finance, constrained allocation, risk decomp
 
 ## Limits
 
-The arithmetic and formulas here are teaching material, not current product recommendations or client analysis. Model agreement does not prove a fair market quote, execution capability or future return. New product work will record data dates, rights, fee definitions and the scope of every comparison.
+The arithmetic and formulas here are teaching material, not current product recommendations or client analysis. Model agreement does not prove a fair market quote, execution capability or future return. The public study records data dates, rights, fee conventions and the scope of each comparison.
 
 [Research directory](../README.md)

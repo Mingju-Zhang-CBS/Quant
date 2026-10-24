@@ -8,7 +8,7 @@ I build testable research systems that connect financial data, model validation 
 
 **Research thread:** Financial Data → Signals → Validation → Portfolio & Execution.
 
-## Six runnable studies
+## Seven runnable studies
 
 ### 01 · [Agentic Quant Research](https://github.com/Mingju-Zhang-CBS/agentic-quant-research)
 
@@ -52,6 +52,13 @@ I build testable research systems that connect financial data, model validation 
 *Mathematical finance · numerical methods · risk*  
 [Case study](projects/derivatives-pricing-lab.md) · [Code](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/reports/demo/REPORT.md)
 
+### 07 · [Defined-Outcome Research](https://github.com/Mingju-Zhang-CBS/defined-outcome-research)
+
+**What does a buffer mean for a later buyer?** I connect public issuer terms to funded option claims, entry-time scenarios and fee conventions, keeping model marks separate from observed quotes.
+
+*Derivatives · product research · funded decisions*  
+[Case study](projects/defined-outcome-research.md) · [Code](https://github.com/Mingju-Zhang-CBS/defined-outcome-research) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/defined-outcome-research/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/defined-outcome-research/blob/main/reports/demo/REPORT.md)
+
 ## Research map
 
 ![From data to decisions](assets/research-map.svg)
@@ -70,18 +77,18 @@ The following are original method notes connecting prior learning and experience
 
 - **Quant research / financial ML:** start with real-data text validation, ML validation and the agent workflow; then read the equity-signal and text notes.
 - **Systematic investing / financial DS:** inspect data timing, the strategy account and the housing/credit note.
-- **Trading / derivatives:** start with the market-making simulation, then analytical pricing and the product note.
+- **Trading / derivatives:** start with market making, then analytical pricing and issuer-grounded defined-outcome research.
 - **Research engineering:** inspect input contracts, rejected candidates, stage recovery, account identities and manifests.
 
 ## Next research
 
 - [Financial Text Validation](roadmap/financial-text-validation.md): implemented using public-domain official FOMC text and archived EUR/USD quotes; see the completed-study record and remaining extensions.
-- [Defined-Outcome Products](roadmap/defined-outcome-research.md): planned extension of the pricing study, exploring entry time, fees and payoff/model-value differences.
+- [Defined-Outcome Research](roadmap/defined-outcome-research.md): implemented issuer-grounded scenarios; synchronized quotes, complete fund NAV replication and multi-period resets remain future work.
 
-The product brief remains planned. The text study is implemented, with separate evidence and no XForecast score or competition entry claimed.
+Both original briefs now have runnable first studies and separately labeled extensions. No competition entry, live execution or actual fund-return claim is implied.
 
 ## Evidence standard
 
-Financial Text Validation uses real public Board text and archived FX references; the other five studies use synthetic inputs or simulated paths. Read the complete report and assumptions before interpreting a metric. A valid factor is not an alpha, a synthetic policy ranking is not real profitability, and a local numerical benchmark is not exchange latency. Each project records its own source/data fingerprints and execution environment.
+Financial Text Validation uses real public Board text and archived FX references. Defined-Outcome Research combines issuer facts with modeled scenarios; five other studies use synthetic inputs or simulated paths. Read the complete report and assumptions before interpreting a metric. A valid factor is not an alpha, a synthetic policy ranking is not real profitability, and a local numerical benchmark is not exchange latency. Each project records its own source/data fingerprints and execution environment.
 
 Development was AI-assisted. Personal implementation, public methods, library authorship and prior collaboration are distinguished in provenance notes. [Machine-readable content catalog](project-catalog.json).
