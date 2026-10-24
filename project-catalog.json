@@ -87,7 +87,15 @@
       "kind": "runnable-study",
       "status": "published-validated",
       "repository": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab",
-      "data": "synthetic"
+      "data": "public-real fund NAVs with modeled allocations; separate legacy synthetic example",
+      "result": "reports/real/REPORT.md",
+      "capabilities": [
+        "asset allocation",
+        "temporal validation",
+        "portfolio funding",
+        "financial data quality"
+      ],
+      "limitation": "Current-vintage history; hypothetical friction and posting; confirmation momentum advantage unproven"
     },
     {
       "id": "derivatives-pricing-lab",
@@ -125,5 +133,14 @@
   "supporting_studies": [
     "derivatives-pricing-lab"
   ],
-  "navigation_repository": "https://github.com/Mingju-Zhang-CBS/Quant"
+  "navigation_repository": "https://github.com/Mingju-Zhang-CBS/Quant",
+  "positioning": "Finance, Data Science and Quantitative Research; investing, markets/products and research systems",
+  "featured_pin_order": [
+    "systematic-strategy-lab",
+    "financial-text-validation",
+    "market-making-lab",
+    "defined-outcome-research",
+    "financial-ml-validation",
+    "agentic-quant-research"
+  ]
 }

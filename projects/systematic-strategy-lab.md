@@ -1,35 +1,33 @@
 # Systematic Strategy Lab
 
-[Source repository](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Methods](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/METHODS.md) · [Tests and offline demo](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/actions/workflows/checks.yml)
+[Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/WALKTHROUGH.md) · [Full real-data report](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/real/REPORT.md) · [Rights](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/DATA_RIGHTS.md)
 
-**Question:** What changes when a portfolio signal becomes a funded account?
+**Question:** Does momentum improve a funded multi-asset allocation after a fair risk-budget control, publication lags and fees?
 
-## Contribution and skills
+## Investment, data and market-implementation skills
 
-An independent long-only simulator connects fixed momentum decisions to later trades, constrained funding and daily P&L. It demonstrates systematic investment research, account modeling, corporate-action conventions, risk metrics and invariants that can be tested independently.
+I independently implemented a five-fund public NAV snapshot contract, fixed allocation rules, a shared-risk-budget static control, self-financing unit transfers, chronological evaluation, paired uncertainty and readable research artifacts. This joins buyside-style opportunity-cost analysis with financial data judgment and practical valuation/funding questions. It does not imply employment across every desk type.
 
-![Research workflow](../assets/systematic-strategy-lab-workflow.svg)
+The 5,639 official TSP valuation dates cover 2003–2025. Each strategy has 5,368 evaluation rows, giving 21,472 daily account rows across momentum, static, C buy-and-hold and G reserve controls. Investment income and expenses are embedded in NAV; no separate dividend, operating fee or cash yield is added. The data-rights record documents public numerical facts and the U.S.-government-work basis, without inventing a third-party Creative Commons grant.
 
-## The recorded experiment
+![Real fund NAV allocation results](../assets/systematic-strategy-lab-real-result.png)
 
-Five asset roles are generated across 1,512 synthetic sessions. Momentum, static allocation and two passive controls share a 252-session warmup and account period. The four strategy runs produce 5,040 daily account rows. Costs and delay are examined through six fixed cases.
+## Findings, including failure
 
-![Synthetic account results](../assets/systematic-strategy-lab-result.png)
+In chronological confirmation (2020–2025), momentum returned 30.69% versus 33.97% for static. Its annualized mean paired log-return difference was −0.42 percentage points, with a 20-session block 95% interval [−3.23, +2.33] pp. The 63-session interval also contains zero; all nine predefined cost/delay comparisons were negative. The evidence does not establish an incremental momentum advantage.
 
-The maximum absolute daily NAV bridge error across the recorded controls is below 3e-11 currency units. Momentum's synthetic excess Sharpe is approximately 0.049, illustrating how a complete implementation can still yield a weak economic result in the chosen experiment.
+The shared risk budget is not exact realized-risk equality, and a comparison with C buy-and-hold has a different exposure. Temporal windows retain continuous holdings, trailing covariance and fixed rules. Historical familiarity and unavailable publication/revision archives prevent a prospective independent OOS claim.
 
-## The mechanism that matters
+## A decision has four clocks
 
-A split changes share units. An ex-date dividend creates a receivable; payment later transfers it to cash without creating additional NAV. The account cannot spend an unpaid entitlement. Trades sell first and reduce purchases to available cash including fees. A decision uses current/past inputs and becomes eligible for execution at a later close.
+Use NAV observations through t, allow a full intervening session for publication, freeze percentage targets, and model a request at 11:00 New York time on t+2. The eventual posting NAV is unknown when weights are set. Whole-percent targets, reserve holdings and posting-month transfer counts reflect simplified plan mechanics. Fractional units and ordinary posting are assumptions; this is not an ETF fill model or full participant-account simulator.
 
-The standalone worked example buys 990 shares at 100 with 1,000 cash. A 2-for-1 split and a dividend of 1 per new share leave 1,980 shares at 49, 1,980 receivable and unchanged NAV of 100,000. After payment, cash rises to 2,980 and receivable returns to zero. This small trace demonstrates an economic identity more directly than a performance curve alone.
+## Follow the money
 
-## Research limits and implementation evidence
+The engine solves after-fee value plus friction equals prior value, charging gross purchases and sales including the reserve leg. A $100,000 G-to-C transfer at a hypothetical 10 bp per leg leaves $99,800.20 invested after a $199.80 fee. Subsequent accumulation-NAV growth is counted once. Daily ledgers reconcile prior value, embedded-income price P&L and fees; target percentages and later realized weights remain distinct.
 
-Synthetic ticker labels are not historical ETF returns. Next-close execution, payment lag and common sessions are explicit assumptions. The model does not establish fill capacity, and the controls have different exposures. The study reports every predetermined stress case without choosing a new strategy from the best row.
+The executable packet contains 23 tests, five real-data figures, four strategies, all nine stress cases, 22 year slices, ledgers/decisions/orders and source/configuration/output hashes. A separately labeled [synthetic accounting study](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/demo/REPORT.md) retains the raw split/ex-date/payment examples; its simulated ETF labels and performance are not real-data evidence.
 
-The standalone packet contains the account engine, a one-event example, per-strategy ledgers/decisions/orders and behavioral tests for future-price invariance, fees, no overdrafts and split/dividend wealth preservation.
+## Source and scope
 
-[Recorded metrics](../assets/systematic-strategy-lab-metrics.json) · [Run manifest](../assets/systematic-strategy-lab-manifest.json)
-
-The complete implementation is published in [`systematic-strategy-lab`](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab). Development was AI-assisted from public financial concepts; restricted original materials are outside the portfolio.
+Source: official TSP public numerical fund-NAV facts, captured in October 2026 and truncated at 31 December 2025. Restricted fund eligibility, a special G reserve mandate, the 2024 I Fund benchmark transition, current-vintage revisions and hypothetical transaction friction constrain interpretation. No original course, employer, client or recruiting materials are included. Development and documentation were AI-assisted.
