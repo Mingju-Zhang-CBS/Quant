@@ -99,9 +99,11 @@
     },
     {
       "id": "financial-text-validation",
-      "kind": "research-brief",
-      "status": "planned",
-      "path": "roadmap/financial-text-validation.md"
+      "kind": "runnable-study",
+      "status": "published-validated",
+      "title": "Financial Text Validation",
+      "repository": "https://github.com/Mingju-Zhang-CBS/financial-text-validation",
+      "data": "public-real: Board policy text and first-published archived H.10 EUR/USD quotes"
     },
     {
       "id": "defined-outcome-research",

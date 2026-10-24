@@ -27,3 +27,7 @@ This area demonstrates NLP preprocessing, entity mapping, sparse representations
 The illustrative sentence counts are synthetic. Original Reuters/RavenPack text, transcript files, teacher frameworks and group contributions remain outside this portfolio. A source notebook with a saved dependency error is not treated as a successfully reproduced project. The new [ML validation study](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) provides runnable evidence of train-only preprocessing and evaluation principles.
 
 [Research directory](../README.md)
+
+## New independent public-data implementation
+
+[Financial Text Validation](https://github.com/Mingju-Zhang-CBS/financial-text-validation) implements the publication-aware question on real public FOMC statements and archived EUR/USD references. It adds independent code, a rights record, temporal checks and measured results; it does not reproduce the original coursework or migrate commercial text. [Completed-study record](../roadmap/financial-text-validation.md).

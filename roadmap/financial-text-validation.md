@@ -1,35 +1,23 @@
-# Planned research: Financial Text Validation
+# Financial Text Validation: completed first study and next extensions
 
-**Status: design brief only. No new model score, competition entry or implemented text pipeline is claimed.**
+**Status: implemented, real public-data study.** [Repository](https://github.com/Mingju-Zhang-CBS/financial-text-validation) · [Recorded report](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/reports/demo/REPORT.md).
 
-## Research question
+The original brief proposed testing whether text adds information beyond prices, with XForecast as a candidate subject to data-rights verification. The implemented first study answers that question on **official FOMC statements and archived H.10 EUR/USD references**. The Board's explicit public-domain reuse policy and non-revised release archive make the data rights and price-availability clocks inspectable. Third-party news rights for an equity benchmark were not assumed.
 
-How much incremental predictive information does text provide beyond price history, and how sensitive is that conclusion to time alignment and evaluation design?
+The task is not interchangeable with XForecast: one currency, policy events, delayed reference-quote entry and 20 subsequent observations. No official competition metric, entry or score is claimed. The earlier competition was historical; its state does not establish permission to redistribute news.
 
-## Candidate benchmark and access
+## Completed evidence
 
-[XForecast](https://arxiv.org/abs/2610.16131) is a candidate historical benchmark combining financial time series and paired text. Its paper describes four-week-ahead stock-movement prediction, training on 2019–2022 and evaluation on 2023. The [competition timeline](https://www.kaggle.com/competitions/xforecast-challenge-kdd/overview/how-to-submit) belongs to a completed 2026 challenge; it is not described as an open future competition.
+- 128 official statements; 4,041 first-vintage quote observations; retained train/validation/confirmation events 60/24/42.
+- Five families: train-prior, price logistic, price gradient boosting, text logistic and fusion. Eleven development fits and frozen confirmation choices.
+- Primary fusion log-loss advantage versus selected price: -0.00029, paired interval [-0.00280, 0.00211]. Results, uncertainty and unfavorable findings remain visible.
+- Offline packaged snapshot, English methods and worked event, behavioral leakage checks, source fingerprints and CI.
 
-Before execution, record exact input version, task schema, target construction, text provenance, redistribution permission, scoring-weight availability and any prior exposure to evaluation labels. A paper's license does not automatically license the data. Users obtain permitted data themselves. No news corpus, secret, original course Reuters/RavenPack data or account credentials are packaged.
+## Remaining extensions, not completed claims
 
-If lawful inputs or required definitions are unavailable, mark the real-data experiment blocked and retain the design; do not substitute fabricated benchmark results. Synthetic interface checks can be labeled separately.
+1. Extend to a separately licensed multi-currency or issuer-level population and a new locked period.
+2. Establish original text vintages or quantify editorial corrections; current historical statement pages are a disclosed residual limitation.
+3. Compare economic text-difference features and richer calibration with a budget fixed before seeing new confirmation data.
+4. Use an equity/news benchmark only after permission, timestamps, target definitions and official scoring inputs have been verified separately.
 
-## Baselines and predeclared comparisons
-
-Use the same eligible observations for a majority baseline, price-only logistic model, price-only gradient-boosted model, text-only TF-IDF/logistic model and a combined price/text model. Fit imputation, scaling, vocabulary and selection inside development. Select from one small registered parameter grid, retain all attempted configurations and freeze the choice before evaluating 2023. No paid LLM or new pretrained-language-model tuning is required for the first study.
-
-Keep official train/evaluation boundaries. Within training, use chronological development folds and purge targets whose documented four-week end reaches a later fold. Deduplicate syndicated/near-identical documents and retain an issuer/date group key. A text timestamp or generated summary that carries later knowledge cannot be relabeled point-in-time simply because the associated price date is historical.
-
-## Measurements
-
-Implement the official weighted hit-rate only when its exact formula and required weights are available. Otherwise report clearly named unweighted accuracy or another explicitly defined proxy, never an official score. Also report Brier/log loss, group performance, coverage, runtime and paired date-block uncertainty in incremental performance. Classification accuracy is not trading P&L.
-
-Primary contrasts are combined versus price-only and text-only versus the simple baseline. Report missing-data exclusions and performance by issuer/date period without selecting a new model from those outcomes. Compare at least the selected model and the fixed baseline on the same rows.
-
-## Deliverables and acceptance
-
-The future implementation must include an input/data-rights sheet, frozen split manifest, parameter/search log, aligned predictions, official-or-proxy scorer tests, ablation table, uncertainty plot and research judgment. Known label construction and publication timing are prerequisites for a forward claim. The conclusion may be that text does not improve the baseline.
-
-## Current competition context
-
-As checked on October 23, 2026, XForecast is a historical benchmark. [FinReason Cup](https://github.com/The-FinAI/IEEE-bigdata-cup) is a separate organizer-hosted financial-agent benchmark whose Task 1/3 system deadlines are October 25, 2026, 23:59 AoE; Task 2 had separate earlier action deadlines. It is recorded as an adjacent benchmark, not a commitment to compete or a Kaggle event. Recheck official rules and status before any future use.
+Reusing the now-exposed 2020–2024 period for tuning must be labeled further historical development, not a new untouched holdout.

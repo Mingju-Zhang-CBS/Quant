@@ -8,7 +8,7 @@ I build testable research systems that connect financial data, model validation 
 
 **Research thread:** Financial Data → Signals → Validation → Portfolio & Execution.
 
-## Five runnable studies
+## Six runnable studies
 
 ### 01 · [Agentic Quant Research](https://github.com/Mingju-Zhang-CBS/agentic-quant-research)
 
@@ -24,21 +24,28 @@ I build testable research systems that connect financial data, model validation 
 *Financial ML · data preparation · uncertainty*  
 [Case study](projects/financial-ml-validation.md) · [Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/demo/REPORT.md)
 
-### 03 · [Market Making Lab](https://github.com/Mingju-Zhang-CBS/market-making-lab)
+### 03 · [Financial Text Validation](https://github.com/Mingju-Zhang-CBS/financial-text-validation)
+
+**Does policy text add information beyond prices?** I compare TF-IDF text, price and fusion models on real public FOMC statements and first-published EUR/USD references, separating measurement dates from release availability and freezing confirmation choices.
+
+*Financial NLP · real-data provenance · publication clocks*  
+[Case study](projects/financial-text-validation.md) · [Code](https://github.com/Mingju-Zhang-CBS/financial-text-validation) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/reports/demo/REPORT.md)
+
+### 04 · [Market Making Lab](https://github.com/Mingju-Zhang-CBS/market-making-lab)
 
 **What changes when fair value becomes an affordable quote?** I connect backward dynamic programming to three inventory/collateral-aware policies across nine shared-path simulations. Every result can be traced through trade cash flows, markouts and settlement.
 
 *Probability · market microstructure · inventory risk*  
 [Case study](projects/market-making-lab.md) · [Code](https://github.com/Mingju-Zhang-CBS/market-making-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/reports/demo/REPORT.md)
 
-### 04 · [Systematic Strategy Lab](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab)
+### 05 · [Systematic Strategy Lab](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab)
 
 **Does a signal still make sense inside a funded account?** I model delayed decisions, integer trades, fees, paid cash and dividend receivables. Four controls reconcile daily NAV before cost and execution-delay sensitivity is interpreted.
 
 *Portfolio construction · accounting · execution assumptions*  
 [Case study](projects/systematic-strategy-lab.md) · [Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/WALKTHROUGH.md) · [Results](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/demo/REPORT.md)
 
-### 05 · [Derivatives Pricing Lab](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab)
+### 06 · [Derivatives Pricing Lab](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab)
 
 **How do numerical error and hedge costs interact?** I connect analytical prices and Greeks to Monte Carlo variance reduction and common-path delta hedging. The study separates sampling uncertainty, model assumptions and the cost of more frequent trades.
 
@@ -61,20 +68,20 @@ The following are original method notes connecting prior learning and experience
 
 ## Choose a reading route
 
-- **Quant research / financial ML:** start with ML validation and the agent workflow; then read the equity-signal and text notes.
+- **Quant research / financial ML:** start with real-data text validation, ML validation and the agent workflow; then read the equity-signal and text notes.
 - **Systematic investing / financial DS:** inspect data timing, the strategy account and the housing/credit note.
 - **Trading / derivatives:** start with the market-making simulation, then analytical pricing and the product note.
 - **Research engineering:** inspect input contracts, rejected candidates, stage recovery, account identities and manifests.
 
 ## Next research
 
-- [Financial Text Validation](roadmap/financial-text-validation.md): planned price/text ablations on a lawful historical benchmark, with explicit target timing and scoring.
+- [Financial Text Validation](roadmap/financial-text-validation.md): implemented using public-domain official FOMC text and archived EUR/USD quotes; see the completed-study record and remaining extensions.
 - [Defined-Outcome Products](roadmap/defined-outcome-research.md): planned extension of the pricing study, exploring entry time, fees and payoff/model-value differences.
 
-Neither brief claims a new implementation, score or competition entry. Competition dates are checked in the text brief and must be rechecked before participation.
+The product brief remains planned. The text study is implemented, with separate evidence and no XForecast score or competition entry claimed.
 
 ## Evidence standard
 
-Public results use synthetic inputs or simulated paths. Read the complete report and assumptions before interpreting a metric. A valid factor is not an alpha, a synthetic policy ranking is not real profitability, and a local numerical benchmark is not exchange latency. Each project records its own source/data fingerprints and execution environment.
+Financial Text Validation uses real public Board text and archived FX references; the other five studies use synthetic inputs or simulated paths. Read the complete report and assumptions before interpreting a metric. A valid factor is not an alpha, a synthetic policy ranking is not real profitability, and a local numerical benchmark is not exchange latency. Each project records its own source/data fingerprints and execution environment.
 
 Development was AI-assisted. Personal implementation, public methods, library authorship and prior collaboration are distinguished in provenance notes. [Machine-readable content catalog](project-catalog.json).
