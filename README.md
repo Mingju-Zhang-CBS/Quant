@@ -9,25 +9,29 @@ I build testable research systems that connect financial evidence, models and de
 
 ## Three flagship questions
 
-|Study|What to inspect first|Evidence and limits|
-|---|---|---|
-|**[Financial ML Validation](https://github.com/Mingju-Zhang-CBS/financial-ml-validation)**|[Treasury findings](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md) · [Equity methods](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/EQUITY_RESEARCH.md)|Purged model comparison, historical stock selection, train-fitted preprocessing and regularization. Public Treasury observations; licensed equity extension and separate synthetic fixture.|
-|**[Derivatives Pricing Lab](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab)**|[QuantLib comparison](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/reports/quantlib/REPORT.md) · [Quote methods](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/docs/QUOTE_RESEARCH.md)|Numerical correctness, Greeks, simulation and quote conventions. Deterministic grid; simulated hedges; private licensed SPX diagnostics.|
-|**[Market Making Lab](https://github.com/Mingju-Zhang-CBS/market-making-lab)**|[Demand experiment](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/reports/demand/REPORT.md)|Conditional value, price-sensitive fills, inventory and adverse selection. Predetermined simulated scenarios, shared paths and explicit cash accounting.|
+**01 / [Financial ML Validation](https://github.com/Mingju-Zhang-CBS/financial-ml-validation)**  
+When does a model deserve to be trusted? Purged comparison, historical stock selection and training-only regularization. Public Treasury observations; licensed equity workflow and a separate synthetic fixture.  
+[Treasury findings](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md) · [Equity methods](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/EQUITY_RESEARCH.md)
+
+**02 / [Derivatives Pricing Lab](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab)**  
+What separates a correct formula from a useful valuation? Numerical checks, Greeks, simulation and contract conventions. Deterministic grid and synthetic examples; licensed SPX results private.  
+[QuantLib comparison](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/reports/quantlib/REPORT.md) · [Quote methods](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/docs/QUOTE_RESEARCH.md)
+
+**03 / [Market Making Lab](https://github.com/Mingju-Zhang-CBS/market-making-lab)**  
+Who still trades when the quote becomes wider? Conditional value, price-sensitive fills, inventory and adverse selection. Predetermined simulated scenarios, shared paths and explicit cash accounting.  
+[Demand experiment](https://github.com/Mingju-Zhang-CBS/market-making-lab/blob/main/reports/demand/REPORT.md)
 
 **Research chain:** observation & identity → information set → signal or valuation → validation → implementation & risk.
 
 ## Complete study collection
 
-|Study|Question|Data / result boundary|
-|---|---|---|
-|[Financial ML Validation](projects/financial-ml-validation.md)|Can transparent models improve a fixed baseline?|Public real Treasury data; equity protocol/code and licensed-data workflow; negative Treasury confirmation retained.|
-|[Derivatives Pricing Lab](projects/derivatives-pricing-lab.md)|Do conventions explain numerical and quote discrepancies?|Parameter grid, synthetic paths and quote fixture; licensed SPX inputs/results remain private.|
-|[Market Making Lab](projects/market-making-lab.md)|How does customer choice change quote-policy risk?|Simulated demand; no calibrated queue or real execution claim.|
-|[Financial Text Validation](projects/financial-text-validation.md)|Does policy text add information beyond prices?|128 public FOMC statements and first-published FX references; incremental text value unproven.|
-|[Systematic Strategy Lab](projects/systematic-strategy-lab.md)|Does momentum survive implementation?|Official fund NAVs with modeled allocations; confirmation advantage unproven.|
-|[Agentic Quant Research](projects/agentic-quant-research.md)|Can research selection survive interruption and audit?|Synthetic offline JSON controller; no paid model, live LLM or Qlib integration claimed.|
-|[Defined-Outcome Research](projects/defined-outcome-research.md)|What protection does a later buyer actually receive?|Public issuer facts with model scenarios; expiry payoff, interim value and observed quote distinguished.|
+- [Financial ML Validation](projects/financial-ml-validation.md) — baseline judgment and historical equity validation; public Treasury data, licensed equity inputs, separate fixture.
+- [Derivatives Pricing Lab](projects/derivatives-pricing-lab.md) — numerical correctness and quote conventions; grid/simulation public, licensed SPX results private.
+- [Market Making Lab](projects/market-making-lab.md) — customer choice, fills and inventory risk; assumed simulated demand.
+- [Financial Text Validation](projects/financial-text-validation.md) — 128 public FOMC statements and archived FX references; incremental text value unproven.
+- [Systematic Strategy Lab](projects/systematic-strategy-lab.md) — official fund NAVs and modeled allocations; confirmation momentum advantage unproven.
+- [Agentic Quant Research](projects/agentic-quant-research.md) — synthetic offline JSON controller; no live LLM or Qlib integration claimed.
+- [Defined-Outcome Research](projects/defined-outcome-research.md) — issuer facts and model scenarios; payoff, interim value and observed quote distinguished.
 
 ## Research map
 
