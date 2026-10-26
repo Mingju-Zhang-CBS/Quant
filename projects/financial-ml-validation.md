@@ -1,33 +1,27 @@
 # Financial ML Validation
 
-[Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Full real-data report](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/WALKTHROUGH.md) · [Data license](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/DATA_LICENSE.md)
+**Question:** Do apparently useful financial features survive a realistic information clock and honest model selection?
 
-**Question:** Can yield-curve classifiers improve probability forecasts beyond a training-fitted baseline?
+[Code](https://github.com/Mingju-Zhang-CBS/financial-ml-validation) · [Equity methods](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/EQUITY_RESEARCH.md) · [Treasury result](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/real/REPORT.md) · [Tests](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/tree/main/tests)
 
-## Contribution and skills
+## Equity: selection, risk adjustment and prediction
 
-I independently implemented a public-data, actual-calendar classification experiment using 9,005 H.15 Treasury observations, five tenors and 25 combined curve/dynamics features. Logistic regression, LightGBM and CatBoost are compared across three fixed variants, with two train-fitted probability baselines. This demonstrates rates-data judgment, keyed features, temporal validation, probability evaluation, dependent inference and reproducible research engineering.
+The independent extension connects historical month-end selection, eight explicit price/liquidity features, a lagged 252-session factor fit and WLS/weighted Ridge/weighted Lasso. Observation, decision, implementation, return-end and label-availability dates are separate fields. Feature clipping, standardization and inverse-variance weight caps are fitted only in training. Five expanding inner windows select regularization inside each preceding four-year window; ten historical outer years span 2016–2025.
 
-## The information boundary that matters
+The [executed synthetic fixture](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/reports/equity-fixture/REPORT.md) checks this chain without redistributing licensed records. CRSP inputs, security-level predictions and derived real-data results remain private pending applicable publication rights. The current historical factor vintage does not establish complete point-in-time availability.
 
-![Future-origin and label clocks](../assets/financial-ml-validation-real-workflow.svg)
+Price-shock event windows are explicitly price-defined, rather than earnings or news events. A fixed eight-feature test family retains failed or unevaluable hypotheses. Quintile diagnostics keep raw stock returns, residual outcomes and costed target-weight turnover distinct; they are not funded NAVs or proven alpha.
 
-Observations through t are assumed available after a full intervening session. The decision is at 09:00 New York on t+2; the target begins with that day's later yield measurement and ends twenty observed sessions later. Training waits until the full label and its publication allowance are known. A stale feature-date target origin would include pre-decision movement and describe the wrong forecasting task.
+## Treasury: a negative result worth keeping
 
-Three expanding windows cover 2008–2019. Every training fold fits its own preprocessing and purges labels by availability. All model-selection labels must finish before confirmation, removing 21 late-2019 rows. Confirmation has 1,479 decision dates from 2 January 2020 through 1 December 2025; unfinished targets are censored. Daily targets overlap, so row counts are not independent monthly trials.
+The separate public-data experiment uses 9,005 H.15 Treasury observations and compares logistic regression, LightGBM and CatBoost with training-fitted probability baselines. Model-selection labels are purged before historical confirmation. The selected CatBoost/dynamics comparator has confirmation log loss 0.71866 versus 0.70915 for climatology; its paired gain is −0.00951, with a 63-session 95% interval [−0.01688, −0.00297]. It does not earn promotion over the baseline.
 
-## What the results say
+![Treasury uncertainty](../assets/financial-ml-validation-real-result.png)
 
-The climatology baseline already leads development. CatBoost/dynamics is the best classifier comparator but does not earn promotion over it. Confirmation log loss is 0.71866 versus 0.70915; paired gain is −0.00951 with 63-session 95% interval [−0.01688,−0.00297], favoring the baseline. Accuracy uncertainty spans zero. Logistic/curve has better confirmation probability loss, but its gain interval spans zero with 63-session blocks and is positive with 126-session blocks. Both are retained, with no retrospective change to the selected model.
+Alternative models and block-length sensitivity remain visible without changing the selection after confirmation. Reference-yield signs are not bond total returns. Current-vintage revisions and missing historical release clocks limit interpretation.
 
-![Dependent uncertainty and model comparison](../assets/financial-ml-validation-real-result.png)
+## Skills and contribution
 
-The four-session availability stress also has an interval spanning zero. Fixed-bin reliability, yearly and as-of inversion slices, and sparse-anchor diagnostics explain what headline accuracy misses. No confirmation recalibration, regime selection or threshold optimization is performed.
+The evidence demonstrates econometric modeling, security/time joins, train-only transforms, nested temporal selection, baseline judgment and dependent inference. Public-method implementation, tests and documentation were AI-assisted; teacher frameworks, group submissions and licensed data are excluded. Individual review is separate from automated execution. [Contribution boundaries](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/PROVENANCE.md).
 
-## Reproduction and scope
-
-The offline packet includes 33 tests (22 real-study plus 11 preserved legacy cases), six English figures, keyed probabilities, all 8,732 timed sample rows, fold audits, fixed protocol, frozen selection and source/data/output fingerprints. The selected official government series use the Board's public-domain reuse policy with attribution; no private financial feed, company data, source website assets or challenge files are distributed.
-
-Current-vintage revisions, missing historical release clocks and Treasury's December 2021 methodology change remain explicit. These are historical temporal checks, not prospective unseen OOS evidence. Reference-yield signs are not bond total returns, executable quotes, alpha or Sharpe. The separate legacy synthetic and anonymous-challenge adapter remains available, with its own limitations and results.
-
-Development and documentation were AI-assisted. Public estimator methods and libraries retain attribution. For QR, discuss information boundaries, baseline choice and uncertainty; for DS, discuss schema, train-only transforms, calibration and reproducible artifacts.
+[Research directory](../README.md)

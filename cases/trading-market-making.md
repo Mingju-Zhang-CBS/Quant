@@ -16,7 +16,7 @@ In a small illustrative account, buying one unit at 0.40 with a 0.001 fee change
 
 Compare fixed quote policies on the same underlying paths and exogenous order-flow draws. Report all predeclared environments. Look at terminal loss tails, inventory occupation, markouts and funding, not only mean P&L. A larger local rank or score under a constructed opponent world is not evidence of a hidden contest result.
 
-The public lab explicitly gives informed takers next-state information while current maker quotes remain isolated. It also gives noise takers price-inelastic demand. That second assumption mechanically rewards wider spreads, so the results cannot identify an optimal market spread. Naming that weakness is part of the research contribution.
+The public lab gives informed takers next-state information while maker quotes remain isolated. The legacy baseline gives noise customers price-inelastic demand, mechanically rewarding wider quotes. The current extension adds reservation-price acceptance with three fixed widths, common draws and independent seeds. Wider quotes lose customers and can receive worse informed-flow markouts; the full experiment retains policy-ranking reversals instead of selecting a favorable scenario. Neither assumed mechanism identifies an optimal real-market spread.
 
 ## Skills and next questions
 
@@ -24,6 +24,6 @@ This area demonstrates conditional probability, dynamic programming, simulation,
 
 ## Evidence boundary
 
-The achievement is a background fact supplied by the account owner; the public model's nine scenarios are new simulated experiments. Neither is used to imply employer endorsement, live trading, contest code redistribution or real-market profitability.
+The competition achievement is a separate background fact. The original nine cases and the current 108-case extension are independently generated simulation evidence. Neither implies employer endorsement, live trading, contest code redistribution or real-market profitability.
 
 [Research directory](../README.md)

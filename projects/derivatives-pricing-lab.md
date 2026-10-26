@@ -1,35 +1,25 @@
 # Derivatives Pricing Lab
 
-[Source repository](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab) · [Methods](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/docs/METHODS.md) · [Tests and offline demo](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/actions/workflows/checks.yml)
+**Question:** How much of a valuation difference comes from numerical implementation, model assumptions or the observed contract?
 
-**Question:** How do valuation accuracy, simulation uncertainty and hedge costs interact?
+[Code](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab) · [QuantLib comparison](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/reports/quantlib/REPORT.md) · [Quote methods](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/docs/QUOTE_RESEARCH.md) · [Tests](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/tree/main/tests)
 
-## Contribution and skills
+## Numerical correctness first
 
-An independent implementation connects Black-Scholes-Merton prices and analytical Greeks to terminal Monte Carlo and a self-financing short-option hedge. It demonstrates mathematical finance, numerical identities, variance estimation, simulation design and declared performance measurement.
+European call/put prices and delta, gamma, vega, theta and rho are compared with independently authored QuantLib 1.44 over 1,296 predetermined parameter cases. Maximum absolute price difference is 4.3e-14 in grid price units. Greek errors use native sensitivity units. This establishes numerical agreement on the grid, not agreement with market quotes.
 
-![Research workflow](../assets/derivatives-pricing-lab-workflow.svg)
+Original analytical, antithetic Monte Carlo and discrete delta-hedging examples remain available. Sampling error, convergence, costs and hedge frequency answer different questions from formula correctness.
 
-## The recorded experiment
+## Contract-aware quote diagnostics
 
-With S=K=100, r=3%, volatility=20%, maturity one year and no dividends, the analytical call price is 9.413403. At 200,000 terminal paths, antithetic sampling lowers estimated standard error from approximately 0.031761 to 0.023705, or 25.4%. Its realized point error is nevertheless larger for this seed: lower sampling variance does not guarantee that every draw is closer to the truth.
+The new workflow checks strike and rate scales, contract size, exercise/settlement, forward keys and curve support before valuation. Fixed lagged 20/60-session historical volatility estimates are compared with bid/ask intervals by year, type and tenor. Vendor-IV repricing is a circular consistency check, not an independent forecast. The supplied market forward already embeds contemporaneous market information about carry.
 
-The hedge study compares 12, 63 and 252 rebalances with 0, 5 and 10 bps costs across 6,000 common stock paths. Frictionless P&L standard deviation falls from about 1.9222 at 12 rebalances to 0.4430 at 252. With costs, frequent trading lowers mean hedge P&L.
+Option, underlying and curve observation times may differ. End-of-day data do not establish executable prices, queue position or trade reconstruction. The [public synthetic quote fixture](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/reports/quote-fixture/REPORT.md) exercises the same checks; licensed SPX records and derived real-data results remain private pending publication rights.
 
-![Hedge risk and cost](../assets/derivatives-pricing-lab-result.png)
+## Skills and contribution
 
-## The numerical choices that matter
+The project connects probability, numerical analysis, contract conventions, data engineering and risk interpretation. New code, tests and documentation were AI-assisted; public models and QuantLib retain attribution. It does not publish classroom or employer implementations or claim an upstream contribution. [Provenance](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab/blob/main/docs/PROVENANCE.md).
 
-An antithetic pair mean is one independent observation; 200,000 terminal paths yield 100,000 pair observations. Batch means and centered second moments avoid retaining every payoff while preserving the variance calculation.
+Continue to [Defined Outcome Research](defined-outcome-research.md) for the distinction between payoff structure, interim model value and investor entry price.
 
-Selling an option funds a delta-stock position plus a cash balance. Cash accrues interest; each rebalance changes stock and cash; final liquidation and payoff settlement are explicit. The simulation uses a common finest grid so comparisons share terminal stock outcomes.
-
-## Verification and limits
-
-The packet tests parity, known prices, finite-difference Greeks, pair-level uncertainty, invalid simulation inputs and one-step hedge accounting. A runnable worked example explains Greek units and the financed hedge cash flow.
-
-The model assumes constant-volatility GBM and zero dividends for hedging. It excludes jumps, stochastic volatility, margin, impact and financing spreads. A seven-run batch benchmark measures 10,000 local option valuations; it is not exchange latency or a production guarantee.
-
-[Recorded metrics](../assets/derivatives-pricing-lab-metrics.json) · [Run manifest](../assets/derivatives-pricing-lab-manifest.json)
-
-The complete implementation is published in [`derivatives-pricing-lab`](https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab). Public outputs are simulated and development was AI-assisted. The original mathematical model retains attribution.
+[Research directory](../README.md)

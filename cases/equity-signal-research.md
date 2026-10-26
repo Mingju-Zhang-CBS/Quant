@@ -22,6 +22,8 @@ This area demonstrates econometrics, feature definitions, exposure control, temp
 
 ## Boundaries
 
+The new [equity extension](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/docs/EQUITY_RESEARCH.md) implements these distinctions with eight explicit features, lagged risk estimates, five inner time windows and ten outer years. The source audit identified full-sample weight clipping, an ambiguous label clock, future-assisted identifier resolution and a reused period chart. The independent implementation uses training-only caps, dated identity quarantine, explicit label availability and period-keyed outputs. Those repairs do not retroactively validate saved course results.
+
 Historical class labels and outcomes have already been inspected. A fresh directory or reshuffle does not recreate an unseen test. The local catalog records group attribution, unexecuted notebook versions and the distinction between lecture frameworks and new public code. This page reports methods and learning, not new results from the original data.
 
 [Research directory](../README.md)

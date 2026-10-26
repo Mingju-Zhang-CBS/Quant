@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-26",
   "items": [
     {
       "id": "financial-data-engineering",
@@ -80,7 +80,19 @@
         "probability calibration",
         "dependent inference"
       ],
-      "limitation": "Current historical vintage; no prospective unseen OOS or trading-return claim. Baseline leads development; selected classifier underperforms confirmation."
+      "limitation": "Current historical vintage; no prospective unseen OOS or trading-return claim. Baseline leads development; selected classifier underperforms confirmation.",
+      "experiments": [
+        {
+          "name": "Treasury classification",
+          "input": "public-real",
+          "result": "reports/real/REPORT.md"
+        },
+        {
+          "name": "Equity extension",
+          "input": "licensed-real-private; synthetic fixture public",
+          "method": "docs/EQUITY_RESEARCH.md"
+        }
+      ]
     },
     {
       "id": "market-making-lab",
@@ -88,7 +100,8 @@
       "kind": "runnable-study",
       "status": "published-validated",
       "repository": "https://github.com/Mingju-Zhang-CBS/market-making-lab",
-      "data": "simulated"
+      "data": "simulated reservation-price and legacy inelastic demand; no market calibration",
+      "result": "reports/demand/REPORT.md"
     },
     {
       "id": "systematic-strategy-lab",
@@ -112,7 +125,8 @@
       "kind": "runnable-study",
       "status": "published-validated",
       "repository": "https://github.com/Mingju-Zhang-CBS/derivatives-pricing-lab",
-      "data": "simulated"
+      "data": "deterministic numerical grid, simulated paths, synthetic quote fixture; licensed SPX workflow and private results",
+      "result": "reports/quantlib/REPORT.md"
     },
     {
       "id": "financial-text-validation",
@@ -129,27 +143,26 @@
       "status": "published-validated",
       "repository": "https://github.com/Mingju-Zhang-CBS/defined-outcome-research",
       "data": "public issuer terms with simulated valuation scenarios; zero quotes bundled"
+    },
+    {
+      "id": "statistical-learning-foundations",
+      "title": "Statistical learning foundations",
+      "kind": "method-note",
+      "status": "published-note",
+      "path": "cases/statistical-learning-foundations.md"
     }
   ],
   "featured_order": [
-    "financial-text-validation",
     "financial-ml-validation",
+    "derivatives-pricing-lab",
     "market-making-lab",
-    "agentic-quant-research",
+    "financial-text-validation",
     "systematic-strategy-lab",
-    "defined-outcome-research"
+    "agentic-quant-research"
   ],
   "supporting_studies": [
-    "derivatives-pricing-lab"
+    "defined-outcome-research"
   ],
   "navigation_repository": "https://github.com/Mingju-Zhang-CBS/Quant",
-  "positioning": "Finance, Data Science and Quantitative Research; investing, markets/products and research systems",
-  "featured_pin_order": [
-    "systematic-strategy-lab",
-    "financial-text-validation",
-    "market-making-lab",
-    "defined-outcome-research",
-    "financial-ml-validation",
-    "agentic-quant-research"
-  ]
+  "positioning": "One research identity connecting finance, mathematics, data validation and market decisions"
 }

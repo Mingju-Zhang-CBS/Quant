@@ -6,7 +6,7 @@
 
 ## Investment, data and market-implementation skills
 
-I independently implemented a five-fund public NAV snapshot contract, fixed allocation rules, a shared-risk-budget static control, self-financing unit transfers, chronological evaluation, paired uncertainty and readable research artifacts. This joins buyside-style opportunity-cost analysis with financial data judgment and practical valuation/funding questions. It does not imply employment across every desk type.
+The AI-assisted implementation provides a five-fund public NAV snapshot contract, fixed allocation rules, a shared-risk-budget static control, self-financing unit transfers, chronological evaluation, paired uncertainty and readable research artifacts. It connects opportunity-cost analysis with financial data judgment and valuation/funding questions. Contribution and individual review are distinct from automated execution.
 
 The 5,639 official TSP valuation dates cover 2003–2025. Each strategy has 5,368 evaluation rows, giving 21,472 daily account rows across momentum, static, C buy-and-hold and G reserve controls. Investment income and expenses are embedded in NAV; no separate dividend, operating fee or cash yield is added. The data-rights record documents public numerical facts and the U.S.-government-work basis, without inventing a third-party Creative Commons grant.
 

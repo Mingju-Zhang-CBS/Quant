@@ -20,7 +20,7 @@ A fall in year-to-year cosine similarity can indicate unusual language, but it c
 
 ## Skills and next study
 
-This area demonstrates NLP preprocessing, entity mapping, sparse representations, event-time alignment, model ablation and uncertainty. The [planned text-validation brief](../roadmap/financial-text-validation.md) turns these lessons into a specific future experiment. It is explicitly planned, with no new score or implemented model claimed.
+This area demonstrates NLP preprocessing, entity mapping, sparse representations, event-time alignment, model ablation and uncertainty. The [completed public-data study](https://github.com/Mingju-Zhang-CBS/financial-text-validation) turns these lessons into a price/text/fusion comparison. Its [research record](../roadmap/financial-text-validation.md) distinguishes the implemented FOMC/FX experiment from the unimplemented XForecast idea.
 
 ## Limitations and source boundaries
 

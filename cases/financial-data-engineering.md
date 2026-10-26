@@ -24,6 +24,8 @@ The [SEC EDGAR API documentation](https://www.sec.gov/search-filings/edgar-appli
 
 ## Limits
 
+The independent [CIZ adapter](https://github.com/Mingju-Zhang-CBS/financial-ml-validation/blob/main/ml_validation/equity/data.py) records source units, monthly historical identity filters, duplicate conflicts and return-duration flags. Backward filling or selecting a latest restated record may fit a descriptive current-vintage analysis, but cannot silently become an as-of historical decision. The adapter does neither. CIZ total returns are not supplemented a second time with dividends or delisting returns.
+
 The numbers above are invented teaching values. No new empirical return result is reported. Templates, collaborators, vendor permissions and personal implementation need separate attribution before any historical source can become a public artifact.
 
 [Research directory](../README.md)

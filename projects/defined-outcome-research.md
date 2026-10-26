@@ -2,7 +2,7 @@
 
 **Question:** How do buffer/cap terms, purchase time and fees change the payoff an investor actually buys?
 
-I independently translated public BJAN/FJAN issuer facts into a dated source ledger, then implemented a European-claim scenario engine. It evaluates 36 fixed entry-time/spot/volatility states, fee/friction and option-budget cases, and integer-funded settlement. The real issuer terms and synthetic pricing assumptions are explicitly distinguished.
+The AI-assisted study translates public BJAN/FJAN issuer facts into a dated source ledger and a European-claim scenario engine. It evaluates 36 fixed entry-time/spot/volatility states, fee/friction and option-budget cases, and integer-funded settlement. Real issuer terms and synthetic pricing assumptions are explicitly distinguished; individual review is separate from automated execution.
 
 ![Entry time changes the payoff relative to purchase cost](../assets/defined-outcome-entry.png)
 
