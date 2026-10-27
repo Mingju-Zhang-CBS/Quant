@@ -29,7 +29,7 @@ Who still trades when the quote becomes wider? Conditional value, price-sensitiv
 - [Derivatives Pricing Lab](projects/derivatives-pricing-lab.md) — numerical correctness and quote conventions; grid/simulation public, licensed SPX results private.
 - [Market Making Lab](projects/market-making-lab.md) — customer choice, fills and inventory risk; assumed simulated demand.
 - [Financial Text Validation](projects/financial-text-validation.md) — 128 public FOMC statements and archived FX references; incremental text value unproven.
-- [Systematic Strategy Lab](projects/systematic-strategy-lab.md) — official fund NAVs and modeled allocations; confirmation momentum advantage unproven.
+- [Systematic Strategy Lab](projects/systematic-strategy-lab.md) — official fund NAVs and modeled allocations; confirmation momentum advantage unproven. New [commodity contract accounting](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_ACCOUNTING.md) uses synthetic public fixtures; licensed futures evidence stays private.
 - [Agentic Quant Research](projects/agentic-quant-research.md) — synthetic offline JSON controller; no live LLM or Qlib integration claimed.
 - [Defined-Outcome Research](projects/defined-outcome-research.md) — issuer facts and model scenarios; payoff, interim value and observed quote distinguished.
 

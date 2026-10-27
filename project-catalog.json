@@ -117,7 +117,13 @@
         "portfolio funding",
         "financial data quality"
       ],
-      "limitation": "Current-vintage history; hypothetical friction and posting; confirmation momentum advantage unproven"
+      "limitation": "Current-vintage history; hypothetical friction and posting; confirmation momentum advantage unproven",
+      "extension": {
+        "id": "commodity-contract-accounting",
+        "status": "implemented-synthetic-accounting-diagnostic",
+        "method_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_ACCOUNTING.md",
+        "data": "synthetic public results; licensed futures evidence private; real strategy not evaluated"
+      }
     },
     {
       "id": "derivatives-pricing-lab",

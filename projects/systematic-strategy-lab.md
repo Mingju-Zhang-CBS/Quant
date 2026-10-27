@@ -1,5 +1,19 @@
 # Systematic Strategy Lab
 
+## Extension / commodity contracts before signals
+
+[Methods](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_ACCOUNTING.md) · [Synthetic results and failures](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodities/REPORT.md) · [Tests](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/tests/test_commodities.py)
+
+The eight-product futures extension tests contract identity, delayed information,
+delivery-safe rolls, same-quantity near/far positions, separate leg costs, a funded
+cash ledger and explicit model collateral. Predetermined controls retain missing
+references, low capacity, failed exits and insolvency. Public commodity results
+are **synthetic accounting diagnostics**, separate from the real TSP study below.
+Licensed WRDS/LSEG source work is private; full historical commodity tradability,
+actual margin reconstruction and carry/basis-momentum performance are not claimed.
+The complete strategy repository has 52 tests: 23 preserved and 29 new commodity
+checks. AI-assisted implementation is distinct from unaided human mastery.
+
 [Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/WALKTHROUGH.md) · [Full real-data report](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/real/REPORT.md) · [Rights](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/DATA_RIGHTS.md)
 
 **Question:** Does momentum improve a funded multi-asset allocation after a fair risk-budget control, publication lags and fees?
