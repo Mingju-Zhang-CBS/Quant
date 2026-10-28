@@ -11,12 +11,14 @@ references, low capacity, failed exits and insolvency. Public commodity results
 are **synthetic accounting diagnostics**, separate from the real TSP study below.
 Licensed WRDS/LSEG source work is private; full historical commodity tradability,
 actual margin reconstruction and carry/basis-momentum performance are not claimed.
-The separate [monthly curve hypothesis interface](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_SIGNALS.md)
-now tests carry, trend and basis-momentum directions on invented observations.
-It enforces visible versions and complete monthly histories; historical strategy
-admission remains incomplete. The repository has 64 tests: 23 original,
-29 commodity accounting checks and 12 monthly signal checks. AI-assisted
-implementation is distinct from unaided human mastery.
+The [exploratory funded runner](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESEARCH.md)
+connects carry, trend and basis-momentum with a declared scheduled-calendar
+proxy, same-contract histories, integer risk requests, per-leg costs and paired
+inference that retains non-evaluable paths. Its [compact public demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodity-research-synthetic/REPORT.md)
+is entirely synthetic; licensed real-reference findings remain private. The
+repository has 78 tests: 23 original, 29 commodity accounting, 12 monthly signal
+and 14 funded-research checks. AI-assisted implementation is distinct from
+unaided human mastery; no complete historical PIT or actual margin claim is made.
 
 [Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/WALKTHROUGH.md) · [Full real-data report](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/real/REPORT.md) · [Rights](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/DATA_RIGHTS.md)
 
