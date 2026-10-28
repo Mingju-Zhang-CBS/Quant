@@ -120,9 +120,11 @@
       "limitation": "Current-vintage history; hypothetical friction and posting; confirmation momentum advantage unproven",
       "extension": {
         "id": "commodity-contract-accounting",
-        "status": "implemented-exploratory-funded-runner",
+        "status": "versioned-exit-priority-and-persistent-liquidity-comparison",
         "method_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESEARCH.md",
-        "data": "synthetic public demonstration; licensed real-reference study and findings private; scheduled calendar and margin are explicit proxies"
+        "data": "synthetic public demonstrations; licensed real-reference findings private; scheduled calendar and margin are explicit proxies",
+        "execution_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_EXECUTION.md",
+        "protocols": ["legacy", "split_only", "persistent"]
       }
     },
     {

@@ -16,9 +16,16 @@ connects carry, trend and basis-momentum with a declared scheduled-calendar
 proxy, same-contract histories, integer risk requests, per-leg costs and paired
 inference that retains non-evaluable paths. Its [compact public demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodity-research-synthetic/REPORT.md)
 is entirely synthetic; licensed real-reference findings remain private. The
-repository has 78 tests: 23 original, 29 commodity accounting, 12 monthly signal
-and 14 funded-research checks. AI-assisted implementation is distinct from
+repository has 84 tests: 23 original, 29 commodity accounting, 12 monthly signal,
+14 funded-research and six exit-priority/liquidity checks. AI-assisted implementation is distinct from
 unaided human mastery; no complete historical PIT or actual margin claim is made.
+
+The [exit-first comparison](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_EXECUTION.md)
+separates required reductions from optional replacement entries; overlapping
+spread legs share daily capacity and incur both closing and opening costs.
+Five lagged observations and monotone maturity floors are fixed engineering
+rules. The original coupled baseline remains reproducible. Public examples are
+invented; licensed results stay private and historical reruns are not fresh OOS.
 
 [Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/WALKTHROUGH.md) · [Full real-data report](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/real/REPORT.md) · [Rights](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/DATA_RIGHTS.md)
 
