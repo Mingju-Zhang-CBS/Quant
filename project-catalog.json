@@ -120,12 +120,13 @@
       "limitation": "Current-vintage history; hypothetical friction and posting; confirmation momentum advantage unproven",
       "extension": {
         "id": "commodity-contract-accounting",
-        "status": "versioned-capacity-sized-paired-retirement-comparison",
+        "status": "versioned-entry-and-paired-exit-budget-comparison",
         "method_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESEARCH.md",
         "data": "synthetic public demonstrations; licensed real-reference findings private; scheduled calendar and margin are explicit proxies",
         "execution_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_EXECUTION.md",
-        "protocols": ["legacy", "split_only", "persistent", "partial_only", "capacity_exit"],
-        "retirement_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_STAGED_EXITS.md"
+        "protocols": ["legacy", "split_only", "persistent", "partial_only", "capacity_exit", "entry_budget"],
+        "retirement_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_STAGED_EXITS.md",
+        "admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_ADMISSION.md"
       }
     },
     {

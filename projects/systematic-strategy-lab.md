@@ -16,8 +16,8 @@ connects carry, trend and basis-momentum with a declared scheduled-calendar
 proxy, same-contract histories, integer risk requests, per-leg costs and paired
 inference that retains non-evaluable paths. Its [compact public demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodity-research-synthetic/REPORT.md)
 is entirely synthetic; licensed real-reference findings remain private. The
-repository has 94 tests: 23 original, 29 commodity accounting, 12 monthly signal,
-14 funded-research, six exit-priority/liquidity and ten paired-retirement checks. AI-assisted implementation is distinct from
+repository has 105 tests: 23 original, 29 commodity accounting, 12 monthly signal,
+14 funded-research, six exit-priority/liquidity, ten paired-retirement and eleven admission-budget checks. AI-assisted implementation is distinct from
 unaided human mastery; no complete historical PIT or actual margin claim is made.
 
 The [exit-first comparison](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_EXECUTION.md)
@@ -34,6 +34,13 @@ retires inventory earlier without changing signal rankings to seek better
 returns. Partial fills remain modeled paired slices; zero capacity and missing
 references cannot be bypassed. The original persistent-policy runner remains
 available as a separate comparison.
+
+The [entry/exit admission study](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_ADMISSION.md)
+tests total post-trade exposure against the weaker candidate leg, remaining exit
+sessions and the unchanged retirement lead. A refused addition cannot stop an
+old reduction. Fixed-state proposal replay and full-account reruns have distinct
+causal interpretations; neither is a fresh unseen OOS claim. The held-inventory
+retirement version and its failures remain reproducible.
 
 [Code](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab) · [Walkthrough](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/WALKTHROUGH.md) · [Full real-data report](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/real/REPORT.md) · [Rights](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/DATA_RIGHTS.md)
 
