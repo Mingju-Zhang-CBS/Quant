@@ -16,7 +16,7 @@ connects carry, trend and basis-momentum with a declared scheduled-calendar
 proxy, same-contract histories, integer risk requests, per-leg costs and paired
 inference that retains non-evaluable paths. Its [compact public demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodity-research-synthetic/REPORT.md)
 is entirely synthetic; licensed real-reference findings remain private. The
-repository has 118 tests, including 13 post-admission stress checks: 23 original, 29 commodity accounting, 12 monthly signal,
+repository has 128 tests, including ten joint-stress and 13 post-admission stress checks: 23 original, 29 commodity accounting, 12 monthly signal,
 14 funded-research, six exit-priority/liquidity, ten paired-retirement and eleven admission-budget checks. AI-assisted implementation is distinct from
 unaided human mastery; no complete historical PIT or actual margin claim is made.
 
@@ -85,3 +85,13 @@ historical robustness paths; they do not establish real fills, SPAN, unseen OOS
 or profitable alpha. Licensed events and findings stay private; original code,
 tests and invented experiments are public. The original admission baseline and
 all prior failures remain available.
+
+## Exit feasibility under joint shocks
+
+The [new fixed-protocol study](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_JOINT_STRESS.md) combines 10/20-session supply outages,
+5%/10% permanent baseline-directed price offsets and a 40% proxy reserve. It
+tracks paired residual inventory, delivery-boundary failures, overlapping failure
+flags and cash gaps. Its invented public example retains all 72 paths, including
+29 failures. Account-specific adverse price worlds support cash/exit diagnostics,
+not cross-strategy alpha rankings. The earlier five-session study is preserved;
+all licensed real-reference findings remain private.
