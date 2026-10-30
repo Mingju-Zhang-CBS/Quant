@@ -16,7 +16,7 @@ connects carry, trend and basis-momentum with a declared scheduled-calendar
 proxy, same-contract histories, integer risk requests, per-leg costs and paired
 inference that retains non-evaluable paths. Its [compact public demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodity-research-synthetic/REPORT.md)
 is entirely synthetic; licensed real-reference findings remain private. The
-repository has 105 tests: 23 original, 29 commodity accounting, 12 monthly signal,
+repository has 116 tests, including 11 post-admission stress checks: 23 original, 29 commodity accounting, 12 monthly signal,
 14 funded-research, six exit-priority/liquidity, ten paired-retirement and eleven admission-budget checks. AI-assisted implementation is distinct from
 unaided human mastery; no complete historical PIT or actual margin claim is made.
 
@@ -73,3 +73,15 @@ The executable packet contains 23 tests, five real-data figures, four strategies
 ## Source and scope
 
 Source: official TSP public numerical fund-NAV facts, captured in October 2026 and truncated at 31 December 2025. Restricted fund eligibility, a special G reserve mandate, the 2024 I Fund benchmark transition, current-vintage revisions and hypothetical transaction friction constrain interpretation. No original course, employer, client or recruiting materials are included. Development and documentation were AI-assisted.
+
+## Post-admission resilience
+
+The [fixed-cohort stress study](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_STRESS.md)
+tests capacity cuts, one-leg shortages and announced proxy-reserve increases
+from the next session after frozen baseline entries. Equal-unit spread slices
+preserve pairing. Risk-buffer breaches and actual modeled cash shortfalls have
+separate outcomes. Seven scenarios across eight funded accounts are dependent
+historical robustness paths; they do not establish real fills, SPAN, unseen OOS
+or profitable alpha. Licensed events and findings stay private; original code,
+tests and invented experiments are public. The original admission baseline and
+all prior failures remain available.
