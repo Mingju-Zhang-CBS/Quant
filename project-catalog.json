@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-26",
+  "as_of": "2026-10-30",
   "items": [
     {
       "id": "financial-data-engineering",
@@ -138,6 +138,12 @@
         "extension_status": "versioned-joint-admission-exit-and-cash-buffer",
         "joint_stress_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_JOINT_STRESS.md",
         "resilient_admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESILIENT_ADMISSION.md"
+      },
+      "intraday": {
+        "status": "synthetic-engine-validated; real-data-gated",
+        "method": "docs/INTRADAY_RESEARCH.md",
+        "data": "public synthetic; licensed TAQ private",
+        "limitation": "Full 2016-2025 quote-backed study not yet validated; corporate actions and cash reference pending"
       }
     },
     {
@@ -171,6 +177,16 @@
       "kind": "method-note",
       "status": "published-note",
       "path": "cases/statistical-learning-foundations.md"
+    },
+    {
+      "id": "macro-rates-research",
+      "title": "Macro Rates Research",
+      "kind": "runnable-study",
+      "status": "public-curve-risk-validated; licensed-policy-unit-and-rights-gated",
+      "repository": "https://github.com/Mingju-Zhang-CBS/macro-rates-research",
+      "data": "public-real current-vintage GSW curves; synthetic policy demo; licensed Fed Funds history private",
+      "result": "reports/curve/REPORT.md",
+      "limitation": "Model positions; no executable bond/futures performance claim"
     }
   ],
   "featured_order": [
@@ -179,10 +195,11 @@
     "market-making-lab",
     "financial-text-validation",
     "systematic-strategy-lab",
-    "agentic-quant-research"
+    "macro-rates-research"
   ],
   "supporting_studies": [
-    "defined-outcome-research"
+    "defined-outcome-research",
+    "agentic-quant-research"
   ],
   "navigation_repository": "https://github.com/Mingju-Zhang-CBS/Quant",
   "positioning": "One research identity connecting finance, mathematics, data validation and market decisions"

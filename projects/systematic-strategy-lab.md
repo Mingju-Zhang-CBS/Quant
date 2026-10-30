@@ -1,5 +1,7 @@
 # Systematic Strategy Lab
 
+**Intraday extension:** [Methods and input contract](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/INTRADAY_RESEARCH.md) · [Offline demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/intraday-synthetic/REPORT.md). Signals precede quotes, reductions precede new-risk funding, and missed closes retain inventory. Real TAQ records stay private; full historical validation is gated.
+
 ## Extension / commodity contracts before signals
 
 [Methods](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_ACCOUNTING.md) · [Synthetic results and failures](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodities/REPORT.md) · [Tests](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/tests/test_commodities.py)
