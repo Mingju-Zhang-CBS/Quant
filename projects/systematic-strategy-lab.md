@@ -16,7 +16,7 @@ connects carry, trend and basis-momentum with a declared scheduled-calendar
 proxy, same-contract histories, integer risk requests, per-leg costs and paired
 inference that retains non-evaluable paths. Its [compact public demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodity-research-synthetic/REPORT.md)
 is entirely synthetic; licensed real-reference findings remain private. The
-repository has 128 tests, including ten joint-stress and 13 post-admission stress checks: 23 original, 29 commodity accounting, 12 monthly signal,
+repository has 146 tests, including 18 joint-buffer, ten joint-stress and 13 post-admission stress checks: 23 original, 29 commodity accounting, 12 monthly signal,
 14 funded-research, six exit-priority/liquidity, ten paired-retirement and eleven admission-budget checks. AI-assisted implementation is distinct from
 unaided human mastery; no complete historical PIT or actual margin claim is made.
 
@@ -95,3 +95,14 @@ flags and cash gaps. Its invented public example retains all 72 paths, including
 29 failures. Account-specific adverse price worlds support cash/exit diagnostics,
 not cross-strategy alpha rankings. The earlier five-session study is preserved;
 all licensed real-reference findings remain private.
+
+## Admission under a long outage and a collateral call
+
+The [fixed joint-buffer extension](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESILIENT_ADMISSION.md) requires time to survive 20 sessions
+without supply and retire the full integer position; it also funds a gross
+adverse-loss, proxy-collateral, fee and cash envelope once for the whole portfolio.
+Old positions remain in the budget until their exits execute. Refused optional
+risk cannot block paired reductions. Its invented comparison preserves the old
+43/29 completed/stopped split and reports 72 completed protected paths, with
+risk intensity and forgone admissions. These constructed outcomes do not prove
+real-market survival or an alpha premium; licensed results remain private.

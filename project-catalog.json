@@ -135,8 +135,9 @@
         "retirement_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_STAGED_EXITS.md",
         "admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_ADMISSION.md",
         "stress_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_STRESS.md",
-        "extension_status": "versioned-joint-outage-price-and-proxy-collateral-stress",
-        "joint_stress_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_JOINT_STRESS.md"
+        "extension_status": "versioned-joint-admission-exit-and-cash-buffer",
+        "joint_stress_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_JOINT_STRESS.md",
+        "resilient_admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESILIENT_ADMISSION.md"
       }
     },
     {
