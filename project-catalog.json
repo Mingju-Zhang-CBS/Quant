@@ -140,14 +140,16 @@
         "resilient_admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESILIENT_ADMISSION.md"
       },
       "intraday": {
-        "status": "source-and-cash-mechanics-validated; full-real-study-gated",
+        "status": "source-origin-and-release-bound-checks-validated; full-real-study-gated",
         "method": "docs/INTRADAY_RESEARCH.md",
         "data": "public synthetic; licensed TAQ private",
         "limitation": "Full 2016-2025 quote-backed study incomplete; current-vintage action amounts and a scheduled-release cash proxy do not resolve missing publication clocks, source exceptions or failed exits",
         "source_audit": "docs/INTRADAY_SOURCE_AUDIT.md",
         "known_answer_report": "reports/intraday-data-fixture/REPORT.md",
         "evidence_review": "docs/INTRADAY_EVIDENCE.md",
-        "precision_fixture": "reports/intraday-evidence-fixture/REPORT.md"
+        "precision_fixture": "reports/intraday-evidence-fixture/REPORT.md",
+        "source_selection": "dated self-NBBO CQM indicators; exact daily lot identities; duplicate and conflicting payload audit",
+        "publication_evidence": "selected issuer amounts linked to official exchange minute-resolution release listings, using conservative upper bounds; earlier gaps retained"
       }
     },
     {
