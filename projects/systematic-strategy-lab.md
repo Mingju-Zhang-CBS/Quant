@@ -1,5 +1,7 @@
 # Systematic Strategy Lab
 
+The [intraday source audit](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/INTRADAY_SOURCE_AUDIT.md) adds date-effective action joins, publication-clocked cash opportunity cost and independent cash/funding reconstruction. Correct numerical amounts can still lack usable historical release evidence. [Invented worked examples](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/intraday-data-fixture/REPORT.md) remain separate from licensed private diagnostics; the intended ten-year evaluation is not complete.
+
 **Intraday extension:** [Methods and input contract](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/INTRADAY_RESEARCH.md) · [Offline demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/intraday-synthetic/REPORT.md). Signals precede quotes, reductions precede new-risk funding, and missed closes retain inventory. Real TAQ records stay private; full historical validation is gated.
 
 ## Extension / commodity contracts before signals

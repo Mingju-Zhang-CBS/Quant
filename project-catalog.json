@@ -109,7 +109,7 @@
       "kind": "runnable-study",
       "status": "published-validated",
       "repository": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab",
-      "data": "public-real fund NAVs with modeled allocations; separate legacy synthetic example",
+      "data": "public-real fund NAV allocations; synthetic execution fixtures; separate licensed private research",
       "result": "reports/real/REPORT.md",
       "capabilities": [
         "asset allocation",
@@ -140,10 +140,12 @@
         "resilient_admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESILIENT_ADMISSION.md"
       },
       "intraday": {
-        "status": "synthetic-engine-validated; real-data-gated",
+        "status": "source-and-cash-mechanics-validated; full-real-study-gated",
         "method": "docs/INTRADAY_RESEARCH.md",
         "data": "public synthetic; licensed TAQ private",
-        "limitation": "Full 2016-2025 quote-backed study not yet validated; corporate actions and cash reference pending"
+        "limitation": "Full 2016-2025 quote-backed study incomplete; current-vintage action amounts and a scheduled-release cash proxy do not resolve missing publication clocks, source exceptions or failed exits",
+        "source_audit": "docs/INTRADAY_SOURCE_AUDIT.md",
+        "known_answer_report": "reports/intraday-data-fixture/REPORT.md"
       }
     },
     {
