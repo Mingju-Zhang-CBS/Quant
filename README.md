@@ -30,6 +30,11 @@ Who still trades when the quote becomes wider? Conditional value, price-sensitiv
 
 ## Complete study collection
 
+New study: [Robust asset allocation](projects/systematic-strategy-lab.md)
+compares return views with risk budgets under common constraints, costs and
+controlled forecast errors. Public results are invented; real ETF research
+remains private.
+
 New study: [Daily online regimes and trend](projects/systematic-strategy-lab.md)
 compares causal HMM filtering with momentum, matched EMA/Kalman smoothing and
 volatility control. The public demonstration is entirely synthetic;

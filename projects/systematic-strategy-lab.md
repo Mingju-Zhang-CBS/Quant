@@ -1,5 +1,12 @@
 # Systematic Strategy Lab
 
+**Robust asset allocation:** [the allocation study](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/ALLOCATION_RESEARCH.md)
+connects Markowitz/Black–Litterman with bounded and return-tilted risk budgets.
+Common risk/cost constraints, labelled views, forecast shocks and numerical
+acceptance checks make model fragility visible. The [complete invented experiment](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/allocation-synthetic/REPORT.md)
+retains every fixed specification; real ETF inputs, parameters and derived
+findings remain private. [Sources and contribution](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/ALLOCATION_PROVENANCE.md).
+
 **Daily regimes and trend:** the [online HMM study](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/REGIME_RESEARCH.md)
 tests whether latent-state filtering adds value beyond momentum, a matched EMA,
 Kalman smoothing and shared volatility control. Next-session-close execution,

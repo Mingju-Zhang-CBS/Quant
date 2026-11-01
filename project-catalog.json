@@ -139,6 +139,14 @@
         "joint_stress_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_JOINT_STRESS.md",
         "resilient_admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESILIENT_ADMISSION.md"
       },
+      "robust_allocation": {
+        "status": "implemented-validated; reproducible synthetic demonstration",
+        "method": "docs/ALLOCATION_RESEARCH.md",
+        "result": "reports/allocation-synthetic/REPORT.md",
+        "data": "independently invented public evidence; current-vintage real ETF inputs and derived findings private",
+        "comparisons": "equal weight, min variance, mean variance, Black-Litterman, bounded risk budgets and defined return tilt",
+        "limitation": "Retrospective model-unit accounts; no complete historical PIT, actual fills or prospective alpha claim"
+      },
       "daily_regimes": {
         "status": "implemented-validated; reproducible synthetic demonstration",
         "method": "docs/REGIME_RESEARCH.md",
