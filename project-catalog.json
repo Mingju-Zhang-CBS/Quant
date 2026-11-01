@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-30",
+  "as_of": "2026-11-01",
   "items": [
     {
       "id": "financial-data-engineering",
@@ -138,6 +138,14 @@
         "extension_status": "versioned-joint-admission-exit-and-cash-buffer",
         "joint_stress_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_JOINT_STRESS.md",
         "resilient_admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESILIENT_ADMISSION.md"
+      },
+      "daily_regimes": {
+        "status": "implemented-validated; reproducible synthetic demonstration",
+        "method": "docs/REGIME_RESEARCH.md",
+        "result": "reports/regimes-synthetic/REPORT.md",
+        "data": "invented public demonstration; current-vintage Yahoo ETF research private",
+        "limitation": "Model total-return units; no actual ETF fills, complete historical PIT or prospective alpha claim",
+        "comparisons": "buy/hold, volatility control, raw/EMA/Kalman momentum, causal HMM gate"
       },
       "intraday": {
         "status": "source-origin-and-release-bound-checks-validated; full-real-study-gated",

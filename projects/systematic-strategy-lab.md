@@ -1,5 +1,12 @@
 # Systematic Strategy Lab
 
+**Daily regimes and trend:** the [online HMM study](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/REGIME_RESEARCH.md)
+tests whether latent-state filtering adds value beyond momentum, a matched EMA,
+Kalman smoothing and shared volatility control. Next-session-close execution,
+funded unit accounts and failed training remain explicit. The [public experiment](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/regimes-synthetic/REPORT.md)
+uses invented inputs throughout; real current-vintage ETF work and derived results
+remain private. [Reference and contribution](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/REGIME_PROVENANCE.md).
+
 [Evidence before admission](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/INTRADAY_EVIDENCE.md) traces quote precision, dated self-NBBO source selection, exact daily lot identities and publication clocks. A [known-answer report](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/intraday-evidence-fixture/REPORT.md) uses invented inputs; linked issuer documents illustrate why an amount, calendar and actual release time are separate facts. Selected issuer amounts are matched to official exchange release listings using conservative minute bounds. Alternate vendor declaration dates remain a separate current-vintage sensitivity and cannot replace missing primary release clocks. The original failed execution baseline, unresolved earlier releases and licensed source records remain separate from public examples.
 
 The [intraday source audit](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/INTRADAY_SOURCE_AUDIT.md) adds date-effective action joins, publication-clocked cash opportunity cost and independent cash/funding reconstruction. Correct numerical amounts can still lack usable historical release evidence. [Invented worked examples](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/intraday-data-fixture/REPORT.md) remain separate from licensed private diagnostics; the intended ten-year evaluation is not complete.

@@ -30,6 +30,11 @@ Who still trades when the quote becomes wider? Conditional value, price-sensitiv
 
 ## Complete study collection
 
+New study: [Daily online regimes and trend](projects/systematic-strategy-lab.md)
+compares causal HMM filtering with momentum, matched EMA/Kalman smoothing and
+volatility control. The public demonstration is entirely synthetic;
+separate real ETF work remains private.
+
 - [Financial ML Validation](projects/financial-ml-validation.md) — baseline judgment and historical equity validation; public Treasury data, licensed equity inputs, separate fixture.
 - [Derivatives Pricing Lab](projects/derivatives-pricing-lab.md) — numerical correctness and quote conventions; grid/simulation public, licensed SPX results private.
 - [Market Making Lab](projects/market-making-lab.md) — customer choice, fills and inventory risk; assumed simulated demand.
