@@ -35,6 +35,12 @@ compares return views with risk budgets under common constraints, costs and
 controlled forecast errors. Public results are invented; real ETF research
 remains private.
 
+New transfer test: [HMM + volatility-adjusted breakout](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/BREAKOUT_RESEARCH.md)
+holds the online HMM fixed while replacing momentum with a channel signal.
+Four-way controls separate the gate from volatility sizing; all windows and
+unfavorable outcomes remain. Public results are synthetic; real data and
+derived findings stay private.
+
 New study: [Daily online regimes and trend](projects/systematic-strategy-lab.md)
 compares causal HMM filtering with momentum, matched EMA/Kalman smoothing and
 volatility control. The public demonstration is entirely synthetic;

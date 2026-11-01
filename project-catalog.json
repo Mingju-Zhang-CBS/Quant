@@ -167,6 +167,14 @@
         "source_selection": "dated self-NBBO CQM indicators; exact daily lot identities; duplicate and conflicting payload audit",
         "publication_evidence": "selected issuer amounts linked to official exchange minute-resolution release listings, using conservative upper bounds; earlier gaps retained",
         "declaration_sensitivity": "separate current-vintage date-proxy lane; exact identity and amount checks; missing and precision-mismatched candidates retained"
+      },
+      "hmm_breakout_transfer": {
+        "status": "implemented-validated; reproducible synthetic demonstration",
+        "method": "docs/BREAKOUT_RESEARCH.md",
+        "result": "reports/breakout-synthetic/REPORT.md",
+        "comparisons": "frozen online HMM; breakout / volatility / HMM / HMM+volatility; persistent20/55/100 and pulse55",
+        "data": "independently invented public OHLC and results; same-vintage real observations, parameters and all derived findings private",
+        "limitation": "Retrospective strategy/asset transfer; no independent unseen holdout, executable ETF fills or verified alpha"
       }
     },
     {

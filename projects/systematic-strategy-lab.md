@@ -1,5 +1,15 @@
 # Systematic Strategy Lab
 
+**HMM transfer to breakout:** the [new transfer experiment](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/BREAKOUT_RESEARCH.md)
+keeps the online HMM and funded account engine fixed and replaces momentum
+with a prior-high/low channel. Four controls separate the state gate from
+volatility sizing; persistent 20/55/100 and pulse55 specifications remain.
+The [invented report](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/breakout-synthetic/REPORT.md)
+retains every period, cost/cash case and paired interval. Parent states, model
+parameters and common accounts are compared; all real inputs and derived real
+findings stay private. [Chinese notes](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/BREAKOUT_LEARNING_CN.md)
+· [Validation](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/BREAKOUT_VALIDATION.md).
+
 **Robust asset allocation:** [the allocation study](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/ALLOCATION_RESEARCH.md)
 connects Markowitz/Black–Litterman with bounded and return-tilted risk budgets.
 Common risk/cost constraints, labelled views, forecast shocks and numerical
@@ -36,8 +46,9 @@ connects carry, trend and basis-momentum with a declared scheduled-calendar
 proxy, same-contract histories, integer risk requests, per-leg costs and paired
 inference that retains non-evaluable paths. Its [compact public demonstration](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/reports/commodity-research-synthetic/REPORT.md)
 is entirely synthetic; licensed real-reference findings remain private. The
-repository has 146 tests, including 18 joint-buffer, ten joint-stress and 13 post-admission stress checks: 23 original, 29 commodity accounting, 12 monthly signal,
-14 funded-research, six exit-priority/liquidity, ten paired-retirement and eleven admission-budget checks. AI-assisted implementation is distinct from
+full repository suite now passes 280 checks, including 27 breakout-transfer
+cases alongside the existing allocation, online-HMM, intraday and commodity
+accounting/stress tests. AI-assisted implementation is distinct from
 unaided human mastery; no complete historical PIT or actual margin claim is made.
 
 The [exit-first comparison](https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_EXECUTION.md)
