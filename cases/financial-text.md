@@ -20,7 +20,7 @@ A fall in year-to-year cosine similarity can indicate unusual language, but it c
 
 ## Skills and next study
 
-The independent [company-news extension](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/README.md) studies novelty, sentiment and past media coverage using a historical stock universe and fixed price/news comparisons. Its protocol and synthetic checks are implemented; rejected WRDS authentication currently prevents entitlement and coverage verification. This status is separate from the completed public FOMC/FX study.
+The independent [company-news extension](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/README.md) studies novelty, sentiment and past media coverage using a historical stock universe and fixed price/news comparisons. Its protocol and synthetic checks are implemented; authenticated WRDS Cloud access now supports real coverage and historical-mapping audits. Receipt-time and scoring-vintage limitations require a protocol amendment before predictive validation. This status is separate from the completed public FOMC/FX study.
 
 This area demonstrates NLP preprocessing, entity mapping, sparse representations, event-time alignment, model ablation and uncertainty. The [completed public-data study](https://github.com/Mingju-Zhang-CBS/financial-text-validation) turns these lessons into a price/text/fusion comparison. Its [research record](../roadmap/financial-text-validation.md) distinguishes the implemented FOMC/FX experiment from the unimplemented XForecast idea.
 

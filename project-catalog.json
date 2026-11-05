@@ -193,7 +193,7 @@
       "title": "Financial Text Validation",
       "repository": "https://github.com/Mingju-Zhang-CBS/financial-text-validation",
       "data": "public-real: Board policy text and first-published archived H.10 EUR/USD quotes",
-      "extensions": [{"id": "company-news", "status": "implemented-synthetic; real-audit-authentication-blocked", "path": "https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/README.md"}]
+      "extensions": [{"id": "company-news", "status": "cloud-access-verified; real-audit-underway; predictive-validation-pending", "path": "https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/README.md"}]
     },
     {
       "id": "defined-outcome-research",

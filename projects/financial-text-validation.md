@@ -1,6 +1,6 @@
 # Financial Text Validation | Real public-data research
 
-**Company-news extension:** [Novelty, Sentiment and Market Response](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/README.md) connects coursework methods to historical entity mapping, news deduplication, price/sentiment/novelty ablations and implementation stresses. Protocol and synthetic engineering checks are implemented; actual WRDS data audit is blocked by authentication. No empirical company-news result is available.
+**Company-news extension:** [Novelty, Sentiment and Market Response](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/README.md) connects coursework methods to historical entity mapping, news deduplication, price/sentiment/novelty ablations and implementation stresses. WRDS Cloud access and initial real-data audits are verified; protocol amendments and predictive validation remain open. No company-news predictive performance is claimed.
 
 **Question:** Does FOMC statement text improve subsequent EUR/USD direction forecasts beyond publication-aware price history?
 
