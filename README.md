@@ -49,7 +49,7 @@ separate real ETF work remains private.
 - [Financial ML Validation](projects/financial-ml-validation.md) — baseline judgment and historical equity validation; public Treasury data, licensed equity inputs, separate fixture.
 - [Derivatives Pricing Lab](projects/derivatives-pricing-lab.md) — numerical correctness and quote conventions; grid/simulation public, licensed SPX results private.
 - [Market Making Lab](projects/market-making-lab.md) — customer choice, fills and inventory risk; assumed simulated demand.
-- [Financial Text Validation](projects/financial-text-validation.md) — 128 public FOMC statements and archived FX references; incremental text value unproven. [Company-news return review](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/RETURN_REVIEW.md) distinguishes failed observed-only references from conditional settlement accounting.
+- [Financial Text Validation](projects/financial-text-validation.md) — public FOMC/FX incremental text value unproven; [company-news strategy ablation](https://github.com/Mingju-Zhang-CBS/financial-text-validation/blob/main/docs/company-news/STRATEGY_COMPARISON.md) establishes no positive net increment and retains all costed losses and delay reversals.
 - [Systematic Strategy Lab](projects/systematic-strategy-lab.md) — public fund-NAV allocations, commodity funding and a separate intraday execution study; evidence classified per experiment.
 - [Macro Rates Research](projects/macro-rates-research.md) — actual public curves and model risk attribution; synthetic policy demo; licensed histories private.
 - [Agentic Quant Research](projects/agentic-quant-research.md) — synthetic offline JSON controller; no live LLM or Qlib integration claimed.
