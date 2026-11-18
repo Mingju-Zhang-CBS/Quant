@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-01",
+  "as_of": "2026-11-18",
   "items": [
     {
       "id": "financial-data-engineering",
@@ -138,6 +138,11 @@
         "extension_status": "versioned-joint-admission-exit-and-cash-buffer",
         "joint_stress_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_JOINT_STRESS.md",
         "resilient_admission_url": "https://github.com/Mingju-Zhang-CBS/systematic-strategy-lab/blob/main/docs/COMMODITY_RESILIENT_ADMISSION.md"
+      },
+      "etf_dual_momentum": {
+        "status": "public methods and narrative findings",
+        "result": "reports/dual-momentum/REPORT.md",
+        "data": "licensed WRDS/CRSP inputs and detailed outputs private"
       },
       "robust_allocation": {
         "status": "implemented-validated; reproducible synthetic demonstration",
